@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"loadcell\startup_stm32f446xx.o"
+"loadcell\hx711.o"
+"loadcell\main.o"
+"loadcell\gpio.o"
+"loadcell\tim.o"
+"loadcell\stm32f4xx_it.o"
+"loadcell\stm32f4xx_hal_msp.o"
+"loadcell\stm32f4xx_hal_tim.o"
+"loadcell\stm32f4xx_hal_tim_ex.o"
+"loadcell\stm32f4xx_hal_rcc.o"
+"loadcell\stm32f4xx_hal_rcc_ex.o"
+"loadcell\stm32f4xx_hal_flash.o"
+"loadcell\stm32f4xx_hal_flash_ex.o"
+"loadcell\stm32f4xx_hal_flash_ramfunc.o"
+"loadcell\stm32f4xx_hal_gpio.o"
+"loadcell\stm32f4xx_hal_dma_ex.o"
+"loadcell\stm32f4xx_hal_dma.o"
+"loadcell\stm32f4xx_hal_pwr.o"
+"loadcell\stm32f4xx_hal_pwr_ex.o"
+"loadcell\stm32f4xx_hal_cortex.o"
+"loadcell\stm32f4xx_hal.o"
+"loadcell\stm32f4xx_hal_exti.o"
+"loadcell\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "LOADCELL\LOADCELL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LOADCELL.map" -o LOADCELL\LOADCELL.axf
